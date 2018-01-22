@@ -1,0 +1,56 @@
+page-main-portada {
+    ion-content .scroll-content {
+        margin-top:0px !important;
+      }
+      ion-navbar .toolbar-background {
+        background: transparent;
+      }
+    
+        #portada-dashboard-header {
+          background: color($colors, primary) url(../i_feuan/textura.jpg) repeat center center;
+          background-size: cover;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          overflow: inherit;
+          margin-bottom: 20px;
+    
+          img.feuan {
+            display: block;
+            float: left;
+              height: auto;
+              width: 75%;
+              max-width: 750px;
+              padding: 8% 0 10% 4%;
+          }
+          img.uan {
+            display: block;
+            float: right;
+              height: auto;
+              width: 14%;
+              max-width: 750px;
+    
+              position: absolute;
+              padding-top: 12%;
+              right: 4%;
+          }
+        }
+    
+    
+    
+    
+        .portada {
+            background: #FFF url(../i_feuan/elementos.png) no-repeat left top;
+            background-size: contain;
+        }
+        .portada::before {
+          display: block;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.9);
+        }
+    
+        .menu-panel ion-icon{
+          font-size: 36px;
+        }
+
+}

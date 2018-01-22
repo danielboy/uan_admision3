@@ -1,0 +1,8 @@
+{
+  "name": "uan_admision3",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
