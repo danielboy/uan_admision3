@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Paginas } from '../../providers/paginas/paginas';
 
 /**
  * Generated class for the MainPortadaPage page.
@@ -15,8 +16,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MainPortadaPage {
 
+  pagina: string ;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
+
+  openPageItem(paginaItem) {
+    // let paginaComponent = (new Paginas).find(paginaItem);
+    // this.nav.setRoot(paginaComponent);
+    (new Paginas).push(paginaItem, this.navCtrl);
+    // this.paginas.push(paginaItem, this.navCtrl);
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MainPortadaPage');

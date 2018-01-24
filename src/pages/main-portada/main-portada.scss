@@ -1,5 +1,24 @@
 page-main-portada {
-    ion-content .scroll-content {
+
+  .button-ios {
+    border-radius: 4px;
+    height: 2.8em;
+    font-size: 1.6rem;
+    color: #fff;
+   // background-color: #1473b9;
+    margin: 2rem 2rem;
+    //padding: 0 1em;
+}
+
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    pointer-events: auto;
+}
+  
+   /*    ion-content .scroll-content {
         margin-top:0px !important;
       }
       ion-navbar .toolbar-background {
@@ -17,25 +36,31 @@ page-main-portada {
             display: block;
             float: left;
               height: auto;
-              width: 75%;
+              width: 120%;
               max-width: 750px;
-              padding: 8% 0 10% 4%;
+            //  padding: 8% 0 10% 4%;
           }
           img.uan {
             display: block;
             float: right;
-              height: auto;
-              width: 14%;
+            width: 260px;
+            height: 140px;
               max-width: 750px;
-    
-              position: absolute;
-              padding-top: 12%;
-              right: 4%;
+              padding: 10% 0 10% 0%;
+             // position: absolute;
+              background: rgba(255, 255, 255, 0.8);
+            //  padding-top: 12%;
+             // right: 4%;
           }
         }
     
-    
-    
+             position: relative;
+            width: 260px;
+            height: 75px;
+            visibility: visible;
+            top: 50px;
+            background: rgba(255, 255, 255, 0.8);
+  
     
         .portada {
             background: #FFF url(../i_feuan/elementos.png) no-repeat left top;
@@ -52,5 +77,11 @@ page-main-portada {
         .menu-panel ion-icon{
           font-size: 36px;
         }
+        
+        .button{
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+        }
 
+          */
+    
 }
