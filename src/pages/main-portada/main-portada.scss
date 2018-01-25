@@ -1,87 +1,73 @@
 page-main-portada {
 
-  .button-ios {
-    border-radius: 4px;
-    height: 2.8em;
-    font-size: 1.6rem;
-    color: #fff;
-   // background-color: #1473b9;
-    margin: 2rem 2rem;
-    //padding: 0 1em;
-}
+  #portada-dashboard-header {
+    //background: color($colors, ligth) url(../i_feuan/textura.jpg) repeat center center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: inherit;
+    margin-bottom: 20px;
 
-  .toolbar-title-ios {
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: #fff;
-    pointer-events: auto;
-}
-  
-   /*    ion-content .scroll-content {
-        margin-top:0px !important;
-      }
-      ion-navbar .toolbar-background {
-        background: transparent;
-      }
-    
-        #portada-dashboard-header {
-          background: color($colors, primary) url(../i_feuan/textura.jpg) repeat center center;
-          background-size: cover;
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-          overflow: inherit;
-          margin-bottom: 20px;
-    
-          img.feuan {
-            display: block;
-            float: left;
-              height: auto;
-              width: 120%;
-              max-width: 750px;
-            //  padding: 8% 0 10% 4%;
-          }
-          img.uan {
-            display: block;
-            float: right;
-            width: 260px;
-            height: 140px;
-              max-width: 750px;
-              padding: 10% 0 10% 0%;
-             // position: absolute;
-              background: rgba(255, 255, 255, 0.8);
-            //  padding-top: 12%;
-             // right: 4%;
-          }
-        }
-    
-             position: relative;
-            width: 260px;
-            height: 75px;
-            visibility: visible;
-            top: 50px;
-            background: rgba(255, 255, 255, 0.8);
-  
-    
-        .portada {
-            background: #FFF url(../i_feuan/elementos.png) no-repeat left top;
-            background-size: contain;
-        }
-        .portada::before {
-          display: block;
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: rgba(255, 255, 255, 0.9);
-        }
-    
-        .menu-panel ion-icon{
-          font-size: 36px;
-        }
+    img.fondo {
+      display: block;
+      float: left;
+      height: 150px;
+      width: 120%;
+      max-width: 750px;
+      padding: 0% 0 0% 0%;
+    }
+    img.logo {
+      display: block;
+      float: left;
+      height: auto;
+      width: 60%;
+      max-width: 750px;
+      position: absolute;
+      top: 10%;
+      right: 20%;
+      background: #ffffff7d;
         
-        .button{
-          box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-        }
+    }
+  }
 
-          */
-    
+
+  #boton{
+    ion-icon {
+      font-size: 17px;
+    }
+    .toolbar-title-ios {
+      text-align: center;
+      font-size: 1.2rem;
+      color: rgb(255, 254, 254); 
+      pointer-events: auto;
+  }
+
+}
+  ion-row {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  ion-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    padding: 10px 5px;
+  }
+  .icon{
+    ion-icon {
+      font-size: 35px;
+    }
+  }
+  .button-round-md.icon {
+    border-radius: 64px;
+    padding: 3.2rem 1.5rem;
+  }
+  .button-ios-primary {
+    color: #fff;
+    background-color: #1473b9;
+   // left: 10%;
+    border-radius: 6px;
+    height: 1.6em;
+   // padding: 0 6rem;
+}
 }

@@ -1,9 +1,9 @@
   
   <ion-content no-padding no-bounce>
 
-        <div>
-                <img src="assets/i2/back1.jpg" alt=""  />
-         <!--       <img src="assets/i2/logo_admision@2x.png" alt="" class="uan" />  -->
+        <div id="portada-dashboard-header">
+                <img src="assets/i2/back1.jpg" alt="" class="fondo"  />
+               <img src="assets/i2/logo_admision@2x.png" alt="" class="logo" /> 
         </div>
         
         
@@ -11,19 +11,19 @@
     <ion-grid>
         <ion-row>     
             <ion-col>
-                    <button ion-button round color="light" (click)="openPageItem('bienvenida')" aria-label="Bienvenida">
-                        <ion-icon name="md-school" color="iconos"></ion-icon>
+                    <button ion-button round color="light" (click)="openPageItem('bienvenida')" aria-label="Bienvenida" class="icon">
+                        <ion-icon name="md-school" color="iconos" ></ion-icon>
                      </button>
                     <p (click)="openPageItem('bienvenida')" text-center>Bienvenida</p>   
             </ion-col>
             <ion-col >
-                    <button ion-button round color="light" (click)="openPageItem('resultados')" aria-label="Resultados Admisión">
+                    <button ion-button round color="light" (click)="openPageItem('resultados')" aria-label="Resultados Admisión" class="icon">
                             <ion-icon name="ios-ribbon" color="iconos"></ion-icon>
                     </button>   
                     <p ng-click="openPageItem('resultados')" text-center>Resultados Admisión</p>             
             </ion-col>
             <ion-col>
-                    <button ion-button round color="light" (click)="openPageItem('requisitos')" aria-label="Requisitos Inscripción">
+                    <button ion-button round color="light" (click)="openPageItem('requisitos')" aria-label="Requisitos Inscripción" class="icon">
                             <ion-icon name="md-checkbox-outline" color="iconos"></ion-icon>
                     </button>
                     <p ng-click="openPageItem('requisitos')" text-center>Requisitos Inscripción</p>  
@@ -31,29 +31,35 @@
         </ion-row>
         <ion-row>
             <ion-col>
-                    <button ion-button round color="light" (click)="openPageItem('eventos')" aria-label="Fechas Importantes">
+                    <button ion-button round color="light" (click)="openPageItem('eventos')" aria-label="Fechas Importantes" class="icon">
                             <ion-icon name="md-calendar"  color="iconos"></ion-icon>
                     </button> 
                     <p ng-click="openPageItem('eventos')" text-center>Fechas Importantes</p> 
             </ion-col>
             <ion-col>
-                    <button ion-button round color="light" (click)="openPageItem('avisos')" aria-label="Noticias y Avisos">
+                    <button ion-button round color="light" (click)="openPageItem('avisos')" aria-label="Noticias y Avisos" class="icon">
                             <ion-icon name="ios-paper"  color="iconos"></ion-icon>
                     </button>  
                     <p ng-click="openPageItem('avisos')" text-center>Noticias y Avisos</p>
             </ion-col>
             <ion-col>
-                    <button ion-button round color="light" (click)="openPageItem('acerca_de')" aria-label="Acerca de">
+                    <button ion-button round color="light" (click)="openPageItem('acerca_de')" aria-label="Acerca de" class="icon">
                             <ion-icon name="md-information-circle"  color="iconos"></ion-icon>
                     </button>  
                     <p ng-click="openPageItem('acerca_de')" text-center>Acerca de</p>
             </ion-col>
         </ion-row>
     </ion-grid>
+<ion-grid>
+        <ion-row>
+                <ion-col>
+                <button ion-button round color="primary" (click)="openPageItem('resultados')" id="boton"  >
+                        <ion-icon name="ios-ribbon"  color="light"></ion-icon> <ion-title> CONSULTA TUS RESULTADOS</ion-title>
+                </button>
+                </ion-col>
+        </ion-row>  
+</ion-grid>
 
-    <button ion-button round color="primary" (click)="openPageItem('resultados')" aria-label="CONSULTA DE RESULTADOS">
-        <ion-icon name="ios-ribbon"  color="light"></ion-icon> <ion-title>CONSULTA DE RESULTADOS</ion-title>
-</button>  
 
   <div>
         <div>
