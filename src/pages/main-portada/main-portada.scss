@@ -6,8 +6,9 @@ page-main-portada {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     overflow: inherit;
     margin-bottom: 20px;
-
+ 
     img.fondo {
+      position: relative;
       display: block;
       float: left;
       height: 150px;
@@ -16,58 +17,58 @@ page-main-portada {
       padding: 0% 0 0% 0%;
     }
     img.logo {
+      position: absolute;
       display: block;
       float: left;
       height: auto;
       width: 60%;
       max-width: 750px;
-      position: absolute;
-      top: 10%;
+      top: 30%;
       right: 20%;
       background: #ffffff7d;
         
     }
   }
 
-
-  #boton{
-    ion-icon {
+    .boton{
+      ion-icon {
       font-size: 17px;
     }
-    .toolbar-title-ios {
-      text-align: center;
-      font-size: 1.2rem;
-      color: rgb(255, 254, 254); 
-      pointer-events: auto;
-  }
-
-}
-  ion-row {
-    height: 100%;
-    flex-wrap: wrap;
-  }
-
-  ion-col {
-    flex: 0 0 25%;
-    max-width: 25%;
-    text-align: center;
-    padding: 10px 5px;
-  }
-  .icon{
-    ion-icon {
-      font-size: 35px;
+    .toolbar-title-md {
+      padding: 0 12px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #fcfcfc;
+    }
+    .button-round-md {
+      border-radius: 6px;
+      padding: 0 2.6rem;
     }
   }
-  .button-round-md.icon {
-    border-radius: 64px;
-    padding: 3.2rem 1.5rem;
-  }
-  .button-ios-primary {
-    color: #fff;
-    background-color: #1473b9;
-   // left: 10%;
-    border-radius: 6px;
-    height: 1.6em;
-   // padding: 0 6rem;
-}
+    .button-round-md {
+      border-radius: 6px;
+      padding: 0 2.6rem;
+    }
+
+    ion-row {
+      height: 100%;
+      flex-wrap: wrap;
+    }
+
+    ion-col {
+      flex: 0 0 25%;
+      max-width: 25%;
+      text-align: center;
+      padding: 10px 5px;
+    }
+    .icon{
+      ion-icon {
+        font-size: 35px;
+      }
+    }
+    .button-round-md.icon {
+      border-radius: 64px;
+      padding: 3.2rem 1.5rem;
+    }
+
 }

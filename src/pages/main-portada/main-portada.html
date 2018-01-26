@@ -1,13 +1,11 @@
-  
-  <ion-content no-padding no-bounce>
+<ion-header id="portada-dashboard-header">
 
-        <div id="portada-dashboard-header">
                 <img src="assets/i2/back1.jpg" alt="" class="fondo"  />
                <img src="assets/i2/logo_admision@2x.png" alt="" class="logo" /> 
-        </div>
-        
-        
-
+              
+ </ion-header>
+  
+ <ion-content padding>
     <ion-grid>
         <ion-row>     
             <ion-col>
@@ -50,20 +48,17 @@
             </ion-col>
         </ion-row>
     </ion-grid>
-<ion-grid>
+    <ion-grid>
         <ion-row>
-                <ion-col>
-                <button ion-button round color="primary" (click)="openPageItem('resultados')" id="boton"  >
-                        <ion-icon name="ios-ribbon"  color="light"></ion-icon> <ion-title> CONSULTA TUS RESULTADOS</ion-title>
-                </button>
-                </ion-col>
+            <ion-col>
+                    <button ion-button round color="primary" (click)="openPageItem('resultados')"   class="boton"  >
+                            <ion-icon name="ios-ribbon"  color="light"></ion-icon> <ion-title> CONSULTA TUS RESULTADOS</ion-title>
+                    </button>
+            </ion-col>
         </ion-row>  
-</ion-grid>
+    </ion-grid>  
+ </ion-content>
 
-
-  <div>
-        <div>
-            <img src="assets/i2/cintilla_hash@2x.png" alt=""  />
-        </div>
-    </div>
-  </ion-content>
+        <ion-footer>
+                  <img src="assets/i2/cintilla_hash@2x.png" alt="" class="cinta"/>
+        </ion-footer>
