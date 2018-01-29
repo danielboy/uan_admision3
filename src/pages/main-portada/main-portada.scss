@@ -1,13 +1,64 @@
 page-main-portada {
 
-  #portada-dashboard-header {
-    //background: color($colors, ligth) url(../i_feuan/textura.jpg) repeat center center;
+    .header-img-container {
+    height: 149px;
+    background: #FFF;
+    background: url("../assets/i2/back1.jpg") no-repeat 50% 0px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .header-img-container .header-img {
+      /* opacity: 0.7; */
+      background: rgba(255, 255, 255, 0.2);
+      border-top: 5px solid #1473b9; }
+    .header-img-container .header-logo {
+      position: relative;
+      width: 260px;
+      height: 75px;
+      visibility: visible;
+      top: 50px;
+      background: rgba(255, 255, 255, 0.8); }
+  
+
+ /* .header-img-container {
+    height: 149px;
+    background: #FFF;
+    background: url(../assets/i2/back1.jpg) no-repeat 50% 0px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+
+  }
+   .header-logo {
+    position: relative;
+    width: 260px;
+    height: 75px;
+    visibility: visible;
+    left: auto;
+    top: 50px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  #portada-dashboard-header {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    overflow: inherit;
-    margin-bottom: 20px;
+    display: block;
+    float: left;
+    height: 150px;
+    width: 120%;
+    max-width: 750px;
+    background-image: url(../assets/i2/back1.jpg) , url(../assets/i2/logo_admision.png);
+    background-size: cover;
  
-    img.fondo {
+
+
+    .toolbar-background {
+      max-height: 180px !important;
+      height: 180px !important;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      background-image: url(../assets/i2/back1.jpg);
+      background-size: cover;
+    }*/
+  /*  img.fondo {
       position: relative;
       display: block;
       float: left;
@@ -27,8 +78,8 @@ page-main-portada {
       right: 20%;
       background: #ffffff7d;
         
-    }
-  }
+    }*/
+  
 
     .boton{
       ion-icon {
