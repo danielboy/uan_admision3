@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Paginas } from '../../providers/paginas/paginas';
 
 /**
- * Generated class for the MainPortadaPage page.
+ * Generated class for the RequisitosLicenciaturaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,24 +10,16 @@ import { Paginas } from '../../providers/paginas/paginas';
 
 @IonicPage()
 @Component({
-  selector: 'page-main-portada',
-  templateUrl: 'main-portada.html',
+  selector: 'page-requisitos-licenciatura',
+  templateUrl: 'requisitos-licenciatura.html',
 })
-export class MainPortadaPage {
-
-  pagina: string ;
+export class RequisitosLicenciaturaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
 
-  openPageItem(paginaItem) {
-    (new Paginas).push(paginaItem, this.navCtrl);
-
-}
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MainPortadaPage');
+    console.log('ionViewDidLoad RequisitosLicenciaturaPage');
   }
 
 }

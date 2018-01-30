@@ -10,6 +10,8 @@ import { LoginPage } from '../../pages/login/login';
 import { MainMenuPage } from '../../pages/main-menu/main-menu';
 import { RequisitosPage } from '../../pages/requisitos/requisitos';
 import { ResultadosPage } from '../../pages/resultados/resultados';
+import { RequisitosLicenciaturaPage } from '../../pages/requisitos/requisitos-licenciatura/requisitos-licenciatura';
+import { RequisitosPreparatoriaPage } from '../../pages/requisitos/requisitos-preparatoria/requisitos-preparatoria';
 
 export let paginas = [
     {
@@ -71,7 +73,20 @@ export let paginas = [
       component: EventosPage,
       //hide: true
     },
-
+    {
+      name: 'req_lic',
+      title: 'Requisitos de Licenciatura',
+      icon: '',
+      component: RequisitosLicenciaturaPage,
+      //hide: true
+    },
+    {
+      name: 'req_pre',
+      title: 'Requisitos de Preparatoria',
+      icon: '',
+      component: RequisitosPreparatoriaPage,
+      //hide: true
+    },
   ];
 
 export function componentsArray() {

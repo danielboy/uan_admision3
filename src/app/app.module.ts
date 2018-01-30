@@ -13,10 +13,12 @@ import { ContactoPage } from '../pages/contacto/contacto';
 import { EventosPage } from '../pages/eventos/eventos';
 import { LoginPage } from '../pages/login/login';
 import { MainMenuPage } from '../pages/main-menu/main-menu';
+import { RequisitosLicenciaturaPage } from '../pages/requisitos/requisitos-licenciatura/requisitos-licenciatura';
+import { RequisitosPreparatoriaPage } from '../pages/requisitos/requisitos-preparatoria/requisitos-preparatoria';
 import { RequisitosPage } from '../pages/requisitos/requisitos';
 import { ResultadosPage } from '../pages/resultados/resultados';
-import { MiPuntajePage } from '../pages/mi-puntaje/mi-puntaje';
-import { ListasDeResultadosPage } from '../pages/listas-de-resultados/listas-de-resultados';
+import { MiPuntajePage } from '../pages/resultados/mi-puntaje/mi-puntaje';
+import { ListasDeResultadosPage } from '../pages/resultados/listas-de-resultados/listas-de-resultados';
 import { Paginas } from '../providers/paginas/paginas';
 
 
@@ -34,13 +36,18 @@ import { Paginas } from '../providers/paginas/paginas';
     MainMenuPage,
     RequisitosPage,
     ResultadosPage,
-    //ListasDeResultadosPage,
-   // MiPuntajePage,
+    RequisitosLicenciaturaPage,
+    RequisitosPreparatoriaPage,
     
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,
+      {
+     //   backButtonText: '',
+        mode: "md",
+      })
+    
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
@@ -58,8 +65,8 @@ import { Paginas } from '../providers/paginas/paginas';
     MainMenuPage,
     RequisitosPage,
     ResultadosPage,
-   // ListasDeResultadosPage,
-   // MiPuntajePage,
+    RequisitosLicenciaturaPage,
+    RequisitosPreparatoriaPage,
   ],
   providers: [
     StatusBar,
