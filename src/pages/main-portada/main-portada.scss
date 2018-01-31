@@ -4,7 +4,6 @@ page-main-portada {
     height: 149px;
     background: #FFF;
     background: url("../assets/i2/back1.jpg") no-repeat 50% 0px;
-    background-position: center right;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
@@ -13,6 +12,7 @@ page-main-portada {
       background: rgba(255, 255, 255, 0.2);
       border-top: 5px solid #1473b9; }
     .header-img-container .header-logo {
+      background-size: cover;
       position: relative;
       width: 260px;
       height: 75px;
