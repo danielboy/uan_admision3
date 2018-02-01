@@ -15,20 +15,20 @@
           <ion-card-title>
               Requisitos de inscripción para licenciatura
             </ion-card-title>
-              <ul>
+              <ul class="letra">
                 <li>Acta original de nacimiento en buenas condiciones sin tachaduras y enmendaduras (excepto el acta de nacimiento de la huella digital) para su cotejo con 2 fotocopias tamaño carta ambos lados.</li>
                 <li>Certificado original en buenas condiciones para su cotejo o constancia de terminación de estudios o con calificaciones hasta el último periodo cursado para su cotejo, 2 fotocopias tamaño carta por ambos lados.</li>
                 <li>Recibo de pago de inscripción original (realizar el pago mínimo 48 horas antes de su inscripción).</li>
                 <li>Comprobante del registro de seguro de vida (desde la página de <a onclick="window.open('https://admision.uan.mx/preinscripcion', '_system', 'location=yes'); return false;">https://admision.uan.mx/preinscripcion</a>; inicia sesión, verifica y completa los datos que se te indican y una vez terminado el llenado, ahí mismo imprime <b>tu recibo de pago de inscripción, formato de seguro de vida y formato de datos estadísticos</b>)</li>
               </ul>
-              <p><b>Nota:</b> si no traes tu certificado original en buenas condiciones, presenta una constancia vigente para ser inscrito como alumno condicionado.</p>
-              <p style="text-align: center;"><button ion-button color="light" ng-click="open('https://admision.uan.mx/preinscripcion', '_system', 'location=yes')">Ir a Imprimir formatos <i class="icon ion-forward"></i></button></p>
+              <p class="letra"><b>Nota:</b> si no traes tu certificado original en buenas condiciones, presenta una constancia vigente para ser inscrito como alumno condicionado.</p>
+              <p style="text-align: center;"><br><button ion-button color="light" (click)="openLink()">Ir a Imprimir formatos  <ion-icon name="ios-redo" color="black"></ion-icon></button><br></p>
               <hr>
-             <!-- <p>Pago por inscripción de <strong>$ {{pagos.lic}}</strong></p>-->
-             <p>Alumnos egresados de preparatorias distintas a las de la UAN, tendrán que hacer equivalencia presentando los siguientes requisitos adicionales:</p>
-             <ul>
+              <p class="letra">Pago por inscripción de <strong>$ {{pagos.lic}}</strong></p>
+             <p class="letra">Alumnos egresados de preparatorias distintas a las de la UAN, tendrán que hacer equivalencia presentando los siguientes requisitos adicionales:</p>
+             <ul class="letra">
                 <li>2 fotocopias tamaño carta del certificado o de la constancia en caso de no tener el certificado.</li>
-              <!--  <li>Pago adicional por tramite de equivalencia de: <br /> <strong>$ {{pagos.equiv_publicas}}</strong> Escuelas oficiales <br /> <strong>$ {{pagos.equiv_privadas}}</strong> Escuelas privadas</li>-->
+               <li>Pago adicional por tramite de equivalencia de: <br /> <strong>$ {{pagos.equiv_publicas}}</strong> Escuelas oficiales <br /> <strong>$ {{pagos.equiv_privadas}}</strong> Escuelas privadas</li>
              </ul>
         </ion-card-content >
         <hr>
@@ -42,8 +42,8 @@
           </ion-fab>
         </ion-col>
         <ion-col col-10 text-center>
-            <span ion-title>MÁS INFORMACIÓN:</span><br>
-            <span class="md-subhead"><strong>(311) 211-8800</strong><br>ext. <strong>8704</strong> y <strong>8810</strong></span>
+            <span><strong>MÁS INFORMACIÓN:</strong></span><br>
+            <span><strong>(311) 211-8800</strong><br>ext. <strong>8704</strong> y <strong>8810</strong></span>
         </ion-col>
         </ion-row>
         </ion-grid>

@@ -11,6 +11,8 @@ import { Paginas } from '../../providers/paginas/paginas';
 export class RequisitosPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+
   }
 
   openPageItem(paginaItem) {

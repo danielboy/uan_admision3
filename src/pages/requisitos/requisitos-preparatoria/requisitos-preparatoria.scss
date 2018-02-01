@@ -1,4 +1,40 @@
 page-requisitos-preparatoria {
 
 
+    hr { 
+        border: 0.5px solid #726f6f; 
+        height: 0px; 
+        text-align: center; 
+      } 
+      .card-title {
+        font-size: 1.7rem;
+    }
+    .card-content.p {
+        font-size: 1.2rem;
+    }
+
+    .button-md.icon {
+        border-radius: 50px;
+        overflow: hidden;
+        height: 5.0rem;
+    }
+    .button-md{
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+
+    ion-icon {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .card-md {
+        width: 100%;
+        margin: 0px;
+
+    }
 }
+
+
+
