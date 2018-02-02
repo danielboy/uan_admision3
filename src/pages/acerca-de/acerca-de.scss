@@ -1,3 +1,20 @@
 page-acerca-de {
 
+    ion-header {
+        max-height: 180px ;
+        height: 180px ;
+        box-shadow: 0 2px 6px rgb(60, 30, 194);
+        background-image: url(../assets/i/headers/admision-header-2.png);
+        background-size: cover;
+      }
+      .toolbar-background {
+        background: #f8f8f808;
+    }
+    .toolbar-title {
+        color:#fff;
+        width: 90%;
+    }
+    .back-button{
+        color:#fff
+    }
 }
