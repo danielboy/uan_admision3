@@ -1,10 +1,10 @@
 
 <ion-content padding>
-    <ion-card ng-click="go('resultados_licenciatura')">
+    <ion-card (click)="openPageItem('res_lic')">
       <img src="assets/i/img_licenciatura.jpg" alt=""><br>
       <ion-title text-center>Licenciatura</ion-title>
     </ion-card>
-    <ion-card ng-click="go('resultados_licenciatura')">
+    <ion-card (click)="openPageItem('res_pre')">
       <img src="assets/i/img_preparatoria.jpg" alt=""><br>
       <ion-title text-center>Preparatoria</ion-title>
     </ion-card>

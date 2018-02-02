@@ -1,12 +1,17 @@
 page-acerca-de {
 
     ion-header {
-        max-height: 180px ;
-        height: 180px ;
-        box-shadow: 0 2px 6px rgb(60, 30, 194);
-        background-image: url(../assets/i/headers/admision-header-2.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #1170c5;
+        background-image: url(../assets/i/admision-header-2.png);
         background-size: cover;
-      }
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
       .toolbar-background {
         background: #f8f8f808;
     }
@@ -17,4 +22,11 @@ page-acerca-de {
     .back-button{
         color:#fff
     }
+    .admision-content {
+        background: #FFF;
+        margin: 0 auto 8px;
+        padding: 10px 10px 20px;
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    }
+
 }
