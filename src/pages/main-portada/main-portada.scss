@@ -15,25 +15,25 @@ page-main-portada {
     }*/
 
     img.logo {
-      position: relative;
-      width: 260px;
-      height: 75px;
+     // position: relative;
+     // width: 260px;
+     // height: 75px;
       visibility: visible;
-      top: 50px;
+      margin-top: 50px;
       background: rgba(255, 255, 255, 0.8);
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
   }
   ion-footer{
-    height: 117px;
     background-size: cover;
     background: transparent url(../assets/i2/cintilla_hash.png) no-repeat right 0 !important;
-    padding: 0;
-    margin: 0; }
-  ion-footer img {
-    width: 365px;
-    height: 165px; }
-
+    display:block;
+    height: 110px;
+   // width: 75px;
+  }
     .boton{
       ion-icon {
       font-size: 17px;
