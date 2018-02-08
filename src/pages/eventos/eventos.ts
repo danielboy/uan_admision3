@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DatePipe } from '@angular/common';
 
 /**
  * Generated class for the EventosPage page.
@@ -15,8 +16,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EventosPage {
 
+  eventos: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.eventos = [{ date:"2018-02-24",nombre: "Dia de la Bandera",detalle:"La actual bandera de los Estados Unidos Mexicanos se adoptó desde el 16 de septiembre de 1968"},
+    { date:"2018-02-24",nombre: "Dia de la Bandera",detalle:"La actual bandera de los Estados Unidos Mexicanos se adoptó desde el 16 de septiembre de 1968"}
+  
+  ]
+
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventosPage');

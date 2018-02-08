@@ -58,7 +58,7 @@ import { Paginas } from '../providers/paginas/paginas';
     BrowserModule,
     IonicModule.forRoot(MyApp,
       {
-     //   backButtonText: '',
+
         mode: "md",
       })
     
@@ -94,5 +94,6 @@ import { Paginas } from '../providers/paginas/paginas';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Paginas,
   ]
+  
 })
 export class AppModule {}

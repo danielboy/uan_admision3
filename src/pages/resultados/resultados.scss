@@ -2,7 +2,32 @@ page-resultados {
 
 
     .toolbar-title {
-        color:#fff;
         width: 90%;
     }    
+
+    .tab-button {
+        background: #1473b9;
+
+    }
+    .tabs-md[tabsHighlight=true] .tab-highlight {
+        background: #e2643d;
+
+    }
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+        color: #f8f8f8;
+    }
+    
+    .tabs-md .tab-button[aria-selected=false] .tab-button-icon {
+        color: #f8f8f8;
+    }
+    .tab-button-icon{
+        color: #ffffff;
+    }
+    .tab-button-text{
+        color: #ffffff;
+    }
+
+  
 }
+
+

@@ -7,35 +7,24 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title text-center>Eventos</ion-title>
+    <ion-title text-center>Fechas Importantes</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <ion-card>   
-        <ion-card-content>
-             <ion-item>
-             <ion-avatar item-start color='primary'>
-                 <!--{{ evento.date | dateToISO | date:'d' }}<br><small>{{ evento.date | dateToISO | date:'MMM' }}</small>-->
-                 24 <br><small>Feb</small>
-              </ion-avatar>
-               <h2>Dia de la Bandera</h2>
-               <p>La actual bandera de los Estados Unidos Mexicanos se adoptó desde el 16 de septiembre de 1968.</p>
-           </ion-item>
-         </ion-card-content>
-        </ion-card>
-        <ion-card>   
-           <ion-card-content>
-                <ion-item>
-                <ion-avatar item-start color='primary'>
-                    <!--{{ evento.date | dateToISO | date:'d' }}<br><small>{{ evento.date | dateToISO | date:'MMM' }}</small>-->
-                    24 <br><small>Feb</small>
-                 </ion-avatar>
-                  <h2>Dia de la Bandera</h2>
-                  <p>La actual bandera de los Estados Unidos Mexicanos se adoptó desde el 16 de septiembre de 1968.</p>
-              </ion-item>
-            </ion-card-content>
-        </ion-card>
+    <ion-card *ngFor="let evento of eventos">   
+      <ion-list>
+        <ion-item>
+          <ion-avatar item-start>
+            
+            {{ evento.date | date:'d' }}<br><small>{{ evento.date | date:'MMM' }}</small>
+          </ion-avatar>
+          <h2>{{ evento.nombre }}</h2>
+          <p>{{ evento.detalle }}</p>
+        </ion-item>
+      </ion-list>
+     </ion-card>
+
 </ion-content>

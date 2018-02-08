@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
 import { Paginas } from '../../../providers/paginas/paginas';
+import { ResultadosLicenciaturaPage  } from '../../../pages/resultados/resultados-licenciatura/resultados-licenciatura';
+import { ResultadosPreparatoriaPage  } from '../../../pages/resultados/resultados-preparatoria/resultados-preparatoria';
 
 
 @IonicPage()
@@ -10,11 +12,18 @@ import { Paginas } from '../../../providers/paginas/paginas';
 })
 export class ListasDeResultadosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private app: App) {
   }
 
-  openPageItem(paginaItem) {
-    (new Paginas).push(paginaItem, this.navCtrl);
+  openPageLic() {
+  this.app.getRootNav().push(ResultadosLicenciaturaPage);
+
 }
+  openPagePre() {
+    this.app.getRootNav().push(ResultadosPreparatoriaPage);
+
+}
+
 
 }

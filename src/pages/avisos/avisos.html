@@ -9,26 +9,14 @@
 
 
 <ion-content padding>
-    <ion-card id="avisos">
+    <ion-card id="avisos" *ngFor="let n of avisos">
         <ion-card-content>
           <ion-card-title>
-            Nine Inch Nails Live
+           {{n.titulo}}
             </ion-card-title>
           <p>
-            The most popular industrial group ever, and largely
-            responsible for bringing the music to a mass audience.
+            {{n.extracto}}
           </p>
         </ion-card-content>
       </ion-card>
-      <ion-card>
-          <ion-card-content>
-            <ion-card-title>
-              Nine Inch Nails Live
-              </ion-card-title>
-            <p>
-              The most popular industrial group ever, and largely
-              responsible for bringing the music to a mass audience.
-            </p>
-          </ion-card-content>
-        </ion-card>
 </ion-content>

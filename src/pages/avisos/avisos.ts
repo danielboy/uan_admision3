@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the AvisosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
+
 
 @IonicPage()
 @Component({
@@ -15,11 +11,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AvisosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  avisos: any;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AvisosPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.avisos = [{titulo: "Nine Inch Nails Live", extracto:" The most popular industrial group ever, and largely"},
+                   {titulo: "Nine Inch Nails Live", extracto:" The most popular industrial group ever, and largely"}
+
+    ]
   }
 
 }
