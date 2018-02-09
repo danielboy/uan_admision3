@@ -15,16 +15,12 @@
 
 <ion-content padding>
     <ion-card *ngFor="let evento of eventos">   
-      <ion-list>
+      <ion-card-content>
         <ion-item>
-          <ion-avatar item-start>
-            
-            {{ evento.date | date:'d' }}<br><small>{{ evento.date | date:'MMM' }}</small>
-          </ion-avatar>
+          <ion-avatar item-start>{{ evento.date | date:'d' }}<br><small>{{ evento.date | date:'MMM' }}</small></ion-avatar>
           <h2>{{ evento.nombre }}</h2>
           <p>{{ evento.detalle }}</p>
         </ion-item>
-      </ion-list>
+      </ion-card-content>
      </ion-card>
-
 </ion-content>
