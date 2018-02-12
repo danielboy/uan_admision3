@@ -28,8 +28,8 @@ export class EventosPage {
   }
   
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EventosPage');
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
   }
 
 }

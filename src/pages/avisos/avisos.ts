@@ -20,5 +20,7 @@ export class AvisosPage {
 
     ]
   }
-
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
+  }
 }

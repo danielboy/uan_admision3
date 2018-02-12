@@ -18,8 +18,7 @@ export class ResultadosPreparatoriaListadoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultadosPreparatoriaListadoPage');
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
   }
-
 }

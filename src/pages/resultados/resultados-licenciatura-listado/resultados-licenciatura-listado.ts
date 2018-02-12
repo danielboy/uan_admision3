@@ -18,8 +18,8 @@ export class ResultadosLicenciaturaListadoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultadosLicenciaturaListadoPage');
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
   }
 
 }

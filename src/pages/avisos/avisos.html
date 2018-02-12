@@ -9,6 +9,12 @@
 
 
 <ion-content padding>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content>
+            pullingIcon="arrow-dropdown"
+            pullingText="Actualizar..."
+        </ion-refresher-content>
+    </ion-refresher>
     <ion-card id="avisos" *ngFor="let n of avisos">
         <ion-card-content>
           <ion-card-title>

@@ -14,5 +14,11 @@
 
 
 <ion-content padding>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content>
+            pullingIcon="arrow-dropdown"
+            pullingText="Actualizar..."
+        </ion-refresher-content>
+    </ion-refresher>
     <ion-title>No Hay Nada</ion-title>
 </ion-content>

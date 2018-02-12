@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController  } from 'ionic-angular';
 
 /**
  * Generated class for the ResultadosLicenciaturaPage page.
@@ -18,7 +18,7 @@ export class ResultadosLicenciaturaPage {
   areas: any;
   programas: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
 
   this.areas = {
     '6': 'ÁREA DE ARTES',
@@ -37,6 +37,22 @@ export class ResultadosLicenciaturaPage {
   ];
 
   }
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
+  }
 
+  ionViewDidEnter() {
+    let toast = this.toastCtrl.create({
+      message: 'No Hay Actualizaciones',
+      duration: 2000,
+      position: 'bottom'
+    });
+  
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+  
+    toast.present();
+  }
 
 }

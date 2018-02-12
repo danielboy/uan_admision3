@@ -28,11 +28,14 @@ page-main-portada {
 
   }
   ion-footer{
+    height: 149px;
     background-size: cover;
-    background: transparent url(../assets/i2/cintilla_hash.png) no-repeat right 0 !important;
+    background: transparent url(../assets/i2/cintilla_hash.png)  no-repeat 50% 0px;
     display:block;
-    height: 110px;
-   // width: 75px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+   
   }
     .boton{
       ion-icon {
@@ -72,7 +75,7 @@ page-main-portada {
     }
     .button-round.icon {
       border-radius: 64px;
-      padding: 3.2rem 1.5rem;
+      padding: 3.0rem 1.5rem;
     }
 
 }

@@ -17,6 +17,16 @@ page-resultados-licenciatura {
     .back-button{
         color:#fff
     }
-
+    .toast-md .toast-wrapper {
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        z-index: 10;
+        display: block;
+        width: 100%;
+        max-width: 100px;
+        background: #333;
+    }
 
 }
