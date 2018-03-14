@@ -38,7 +38,7 @@ export class ServiceProvider {
         eventos: this.APP_DOMAIN + "/APP/v1/eventos.json",
         avisos: this.APP_DOMAIN + "/APP/v1/avisos.json",
         resultados_puntajes: this.APP_DOMAIN + "/APP_API/cat_programas-puntajes.v"+this.CAT_VERSION+".json",
-        resultados_programas: this.APP_DOMAIN + "/APP_API/cat_programas-{nivel}.v"+this.CAT_VERSION+".json",
+        resultados_programas: this.APP_DOMAIN + "/APP_API/cat_programas-{pre}.v"+this.CAT_VERSION+".json",
         resultados_listado: this.APP_DOMAIN + "/APP_API/cat_resultados-{nivel}@{id}.v"+this.CAT_VERSION+".json",
         ping: this.PREFICHA_URL + "ping",
         login: this.PREFICHA_URL + "login",
@@ -54,6 +54,34 @@ export class ServiceProvider {
 
                 resolve(data)
                 console.log(data,'avisos datos')
+        },
+        error =>{
+            reject(true)
+        })
+    })
+
+  }
+
+  eventos(){
+    return new Promise((resolve, reject) => {
+        this.http.get(this.API_URL.eventos).subscribe(data => {
+
+                resolve(data)
+                console.log(data,'eventos datos')
+        },
+        error =>{
+            reject(true)
+        })
+    })
+
+  }
+
+  resultados_programas(){
+    return new Promise((resolve, reject) => {
+        this.http.get(this.API_URL.resultados_programas).subscribe(data => {
+
+                resolve(data)
+                console.log(data,'resultados_programas datos')
         },
         error =>{
             reject(true)

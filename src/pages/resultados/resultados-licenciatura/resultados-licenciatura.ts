@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController  } from 'ionic-angular';
+import {ServiceProvider} from '../../../providers/service/service'
 
 /**
  * Generated class for the ResultadosLicenciaturaPage page.
@@ -12,13 +13,15 @@ import { IonicPage, NavController, NavParams, ToastController  } from 'ionic-ang
 @Component({
   selector: 'page-resultados-licenciatura',
   templateUrl: 'resultados-licenciatura.html',
+  providers: [ServiceProvider]
 })
 export class ResultadosLicenciaturaPage {
 
   areas: any;
   programas: any;
+  resultados_programas: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController, private service: ServiceProvider) {
 
   this.areas = {
     '6': 'ÁREA DE ARTES',
@@ -36,14 +39,13 @@ export class ResultadosLicenciaturaPage {
     {'ida': '2', 'carreras':'Filosofia'},
   ];
 
-  }
-  doRefresh(refresher) {
-    console.log('Begin async operation', refresher);
+
   }
 
-  ionViewDidEnter() {
+  ionViewWillEnter(){
+
     let toast = this.toastCtrl.create({
-      message: 'No Hay Actualizaciones',
+      message: 'No Hay Resultados',
       duration: 2000,
       position: 'bottom'
     });
@@ -53,6 +55,34 @@ export class ResultadosLicenciaturaPage {
     });
   
     toast.present();
+
   }
+
+    /*this.consulta()
+      }
+
+    consulta(){
+        this.service.resultados_programas().then(data =>
+          this.resultados_programas = data)
+          console.log(this.resultados_programas)
+
+          let toast = this.toastCtrl.create({
+            message: 'No Hay Actualizaciones',
+            duration: 2000,
+            position: 'bottom'
+          });
+        
+          toast.onDidDismiss(() => {
+            console.log('Dismissed toast');
+          });
+        
+          toast.present();
+      }
+      
+      doRefresh(refresher) {
+        this.service.resultados_programas().then(data =>
+          this.resultados_programas = data)
+          refresher.complete();
+      }*/
 
 }

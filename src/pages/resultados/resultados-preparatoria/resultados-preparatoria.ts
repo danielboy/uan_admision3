@@ -18,7 +18,7 @@ export class ResultadosPreparatoriaPage {
 
   ionViewDidEnter() {
     let toast = this.toastCtrl.create({
-      message: 'No Hay Actualizaciones',
+      message: 'No Hay Resultados',
       duration: 3000,
       position: 'bottom'
     });

@@ -15,18 +15,24 @@
 
 <ion-content padding>
     <ion-refresher (ionRefresh)="doRefresh($event)">
-        <ion-refresher-content>
+        <ion-refresher-content
             pullingIcon="arrow-dropdown"
-            pullingText="Actualizar..."
+            pullingText="Actualizar...">
         </ion-refresher-content>
     </ion-refresher>
     <ion-card *ngFor="let evento of eventos">   
       <ion-card-content>
-        <ion-item>
-          <ion-avatar item-start>{{ evento.date | date:'d' }}<br><small>{{ evento.date | date:'MMM' }}</small></ion-avatar>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-3>
+          <ion-avatar item-start>{{ evento.date | date:'dd' }}<br><small>{{ evento.date | date:'MMM' }}</small></ion-avatar>
+            </ion-col>
+            <ion-col col-9>
           <h2>{{ evento.nombre }}</h2>
           <p>{{ evento.detalle }}</p>
-        </ion-item>
+            </ion-col>
+      </ion-row>
+      </ion-grid>
       </ion-card-content>
      </ion-card>
 </ion-content>
