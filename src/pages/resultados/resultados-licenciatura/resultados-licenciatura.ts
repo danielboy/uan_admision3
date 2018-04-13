@@ -32,12 +32,14 @@ export class ResultadosLicenciaturaPage {
     '2': 'CIENCIAS SOCIALES Y HUMANIDADES',
   };
   this.programas =[
-    {'ida': '1', 'carreras':'Medico Cirujano'},
+    { 'ida': '1', 'carreras':'Medico Cirujano'},
     {'ida': '1', 'carreras':'Enfermeria'},
     {'ida': '1', 'carreras':'Odontologia'},
     {'ida': '2', 'carreras':'Derecho'},
     {'ida': '2', 'carreras':'Filosofia'},
   ];
+
+
 
 
   }
